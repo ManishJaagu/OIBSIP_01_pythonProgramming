@@ -158,7 +158,7 @@ def get_weather(command):
         if city == 'None':
             return False
 
-        api_key = 'c68f176b517e991a72bd973a671ed26b'
+        api_key = '[paste your own Open-Weather API key here]'
         weather_data = requests.get(
             f"https://api.openweathermap.org/data/2.5/weather?q={city}&units=imperial&APPID={api_key}")
         if weather_data.status_code == 200:
